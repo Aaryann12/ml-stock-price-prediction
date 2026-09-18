@@ -176,6 +176,18 @@ body {
   color: #FFFFFF;
 }
 
+/* Hide number input increment/decrement spinner arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* Animations */
 @keyframes pulseGlow {
 

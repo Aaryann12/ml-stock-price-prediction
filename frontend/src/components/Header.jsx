@@ -1,5 +1,5 @@
 import React from 'react';
-import { Moon, ChevronDown, User } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 export default function Header({ title, subtitle, highlightWord }) {
   // Render title with styled highlight word if provided
@@ -47,23 +47,6 @@ export default function Header({ title, subtitle, highlightWord }) {
 
       {/* Right Controls */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-        {/* Dark Theme Toggle Button */}
-        <button style={{
-          width: '40px',
-          height: '40px',
-          borderRadius: '50%',
-          background: 'rgba(255, 255, 255, 0.05)',
-          border: '1px solid var(--border-color)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: '#FFFFFF',
-          cursor: 'pointer',
-          transition: 'all 0.2s ease'
-        }}>
-          <Moon size={18} />
-        </button>
-
         {/* User Profile Pill */}
         <div style={{
           display: 'flex',
